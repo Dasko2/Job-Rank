@@ -1,0 +1,43 @@
+name: JobsRanks
+version: 1.0
+main: fr.jobsranks.Main
+api-version: 1.20
+
+commands:
+
+  jobs:
+    description: Menu des métiers
+  rank:
+    description: Info rank
+  rankup:
+    description: Monter de rank
+
+  home:
+    description: Teleport home system
+  sethome:
+    description: Set home
+  delhome:
+    description: Delete home
+
+  admin:
+    description: Admin commands
+
+permissions:
+
+  jobs.admin:
+    default: op
+
+  jobs.nether:
+    default: false
+
+  jobs.end:
+    default: false
+
+  jobs.fly:
+    default: false
+
+  jobs.ec:
+    default: false
+
+  jobs.nightvision:
+    default: false
