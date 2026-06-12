@@ -1,55 +1,29 @@
-name: Build JobsRanks
+name: Build ZIP Project
 
 on:
-
   push:
-
     branches:
       - main
       - master
 
-  pull_request:
-
 jobs:
-
-  build:
+  zip-project:
 
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Java 21
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: 21
-
-      - name: Cache Maven
-        uses: actions/cache@v4
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-m2
-
-      - name: Build Plugin
-        run: mvn clean package
-
-      - name: Create Release Folder
-        run: |
-          mkdir release
-          cp target/*.jar release/
-
       - name: Create ZIP
         run: |
-          cd release
-          zip -r JobsRanks.zip .
+          zip -r JobsRanks-Project.zip . \
+          -x "*.git*" \
+          -x "target/*" \
+          -x ".idea/*"
 
       - name: Upload ZIP
         uses: actions/upload-artifact@v4
         with:
-          name: JobsRanks
-          path: release/JobsRanks.zip
+          name: JobsRanks-Project
+          path: JobsRanks-Project.zip
