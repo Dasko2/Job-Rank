@@ -1,0 +1,110 @@
+ranks:
+  max: 11
+
+  money:
+    rank6: 500000
+    rank11: 12000000
+
+jobs:
+
+  mineur:
+    xp:
+      stone: 5
+      cobblestone: 1
+      deepslate: 6
+      deepslate_cobblestone: 1
+
+      coal_ore: 15
+      deepslate_coal_ore: 15
+
+      iron_ore: 8
+      deepslate_iron_ore: 8
+
+      copper_ore: 20
+      deepslate_copper_ore: 20
+
+      gold_ore: 12
+      deepslate_gold_ore: 12
+
+      redstone_ore: 10
+      deepslate_redstone_ore: 10
+
+      lapis_ore: 30
+      deepslate_lapis_ore: 30
+
+      diamond_ore: 150
+      deepslate_diamond_ore: 150
+
+      emerald_ore: 70
+      deepslate_emerald_ore: 70
+
+      ancient_debris: 100
+
+  bucheron:
+    xp:
+      oak_log: 12
+      spruce_log: 2
+      birch_log: 12
+      jungle_log: 2.5
+      acacia_log: 14
+      dark_oak_log: 2
+      mangrove_log: 15
+      cherry_log: 3
+      pale_oak_log: 15
+      crimson_stem: 3.5
+      warped_stem: 18
+
+  agriculteur:
+    xp:
+      wheat: 15
+      carrot: 15
+      potato: 15
+      beetroot: 15
+      nether_wart: 20
+      cocoa: 18
+      pumpkin: 12
+      melon: 12
+      cactus: 10
+
+  chasseur:
+    xp:
+      zombie: 40
+      skeleton: 15
+      creeper: 50
+      spider: 12
+      cave_spider: 40
+      enderman: 40
+      blaze: 80
+      ghast: 60
+      piglin: 40
+      wither_skeleton: 75
+      guardian: 25
+      elder_guardian: 300
+
+  builder:
+    xp:
+      stone: 6
+      cobblestone: 5
+      glass: 8
+      quartz: 25
+      obsidian: 40
+      glowstone: 20
+      sea_lantern: 30
+
+  pecheur:
+    xp:
+      cod: 35
+      salmon: 50
+      tropical_fish: 120
+
+  marchand:
+    xp:
+      trade: 50
+
+  enchanteur:
+    xp:
+      rare_item: 25
+
+  alchimiste:
+    xp:
+      potion: 18
