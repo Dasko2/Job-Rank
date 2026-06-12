@@ -1,20 +1,157 @@
 ranks:
+
   max: 11
 
-  money:
-    rank6: 500000
-    rank11: 12000000
+  list:
+
+    1:
+      name: "Recrue"
+      homes: 1
+      ah_slots: 5
+      money_required: 0
+      playtime_required_hours: 0
+      total_jobs_required: 0
+      nether: false
+      end: false
+
+    2:
+      name: "Explorateur"
+      homes: 2
+      ah_slots: 10
+      money_required: 10000
+      playtime_required_hours: 2
+      total_jobs_required: 20
+
+      rewards:
+        nightvision: true
+
+    3:
+      name: "Nova"
+      homes: 3
+      ah_slots: 15
+      money_required: 50000
+      playtime_required_hours: 5
+      total_jobs_required: 50
+
+    4:
+      name: "Pionnier"
+      homes: 4
+      ah_slots: 20
+      money_required: 100000
+      playtime_required_hours: 10
+      total_jobs_required: 100
+
+    5:
+      name: "Quantum"
+      homes: 5
+      ah_slots: 25
+      money_required: 250000
+      playtime_required_hours: 20
+      total_jobs_required: 180
+
+      rewards:
+        enderchest: true
+
+    6:
+      name: "Hyperion"
+      homes: 6
+      ah_slots: 30
+      money_required: 500000
+      playtime_required_hours: 35
+      total_jobs_required: 250
+      nether: true
+
+    7:
+      name: "Nexus"
+      homes: 7
+      ah_slots: 35
+      money_required: 1000000
+      playtime_required_hours: 60
+      total_jobs_required: 350
+
+    8:
+      name: "Titan"
+      homes: 8
+      ah_slots: 40
+      money_required: 2000000
+      playtime_required_hours: 90
+      total_jobs_required: 500
+
+      rewards:
+        fly:
+          duration_seconds: 300
+          cooldown_seconds: 3600
+          warning_before_end: 30
+
+    9:
+      name: "Eclipse"
+      homes: 9
+      ah_slots: 45
+      money_required: 4000000
+      playtime_required_hours: 130
+      total_jobs_required: 650
+
+    10:
+      name: "Omega"
+      homes: 10
+      ah_slots: 50
+      money_required: 7000000
+      playtime_required_hours: 180
+      total_jobs_required: 800
+
+    11:
+      name: "Ascendant"
+      homes: 11
+      ah_slots: 55
+      money_required: 12000000
+      playtime_required_hours: 250
+      total_jobs_required: 900
+      end: true
 
 jobs:
 
+  leveling:
+
+    max_level: 100
+
+    first_level_xp: 1000
+
+    formula:
+      type: exponential
+      multiplier: 1.0526
+
+  level_rewards:
+
+    base_money: 100
+    multiplier: 1.08
+
   mineur:
+
+    natural_only: true
+
     xp:
+
       stone: 5
       cobblestone: 1
+
       deepslate: 6
       deepslate_cobblestone: 1
 
-      coal_ore: 15
+      andesite: 5
+      diorite: 5
+      granite: 5
+
+      tuff: 6
+      calcite: 6
+
+      sandstone: 5
+
+      netherrack: 0.5
+      blackstone: 6
+      basalt: 1
+
+      end_stone: 8
+            coal_ore: 15
       deepslate_coal_ore: 15
 
       iron_ore: 8
@@ -38,73 +175,502 @@ jobs:
       emerald_ore: 70
       deepslate_emerald_ore: 70
 
+      nether_gold_ore: 25
+
       ancient_debris: 100
 
+    money:
+
+      stone: 1
+      cobblestone: 0.2
+
+      deepslate: 1
+      deepslate_cobblestone: 0.2
+
+      andesite: 1
+      diorite: 1
+      granite: 1
+
+      tuff: 1
+      calcite: 1
+
+      sandstone: 1
+
+      netherrack: 0.1
+      blackstone: 1
+      basalt: 0.2
+
+      end_stone: 2
+
+      coal_ore: 5
+      deepslate_coal_ore: 5
+
+      iron_ore: 3
+      deepslate_iron_ore: 3
+
+      copper_ore: 8
+      deepslate_copper_ore: 8
+
+      gold_ore: 4
+      deepslate_gold_ore: 4
+
+      redstone_ore: 4
+      deepslate_redstone_ore: 4
+
+      lapis_ore: 12
+      deepslate_lapis_ore: 12
+
+      diamond_ore: 50
+      deepslate_diamond_ore: 50
+
+      emerald_ore: 25
+      deepslate_emerald_ore: 25
+
+      nether_gold_ore: 8
+
+      ancient_debris: 40
+
   bucheron:
+
     xp:
+
       oak_log: 12
       spruce_log: 2
+
       birch_log: 12
       jungle_log: 2.5
+
       acacia_log: 14
       dark_oak_log: 2
+
       mangrove_log: 15
       cherry_log: 3
+
       pale_oak_log: 15
+
       crimson_stem: 3.5
       warped_stem: 18
 
+    money:
+
+      oak_log: 2
+      spruce_log: 1
+
+      birch_log: 2
+      jungle_log: 1
+
+      acacia_log: 3
+      dark_oak_log: 1
+
+      mangrove_log: 3
+      cherry_log: 2
+
+      pale_oak_log: 3
+
+      crimson_stem: 2
+      warped_stem: 4
+
   agriculteur:
+
     xp:
+
       wheat: 15
       carrot: 15
       potato: 15
       beetroot: 15
+
       nether_wart: 20
       cocoa: 18
+
       pumpkin: 12
       melon: 12
+
       cactus: 10
 
+    money:
+
+      wheat: 5
+      carrot: 5
+      potato: 5
+      beetroot: 5
+
+      nether_wart: 7
+      cocoa: 6
+
+      pumpkin: 4
+      melon: 4
+
+      cactus: 3
+
   chasseur:
+
     xp:
+
       zombie: 40
       skeleton: 15
+
       creeper: 50
       spider: 12
+
       cave_spider: 40
       enderman: 40
+
       blaze: 80
       ghast: 60
+
+      drowned: 45
+      husk: 16
+
+      stray: 45
+      witch: 25
+
+      slime: 20
+      magma_cube: 7
+
       piglin: 40
+      piglin_brute: 50
+
       wither_skeleton: 75
+      hoglin: 20
+
+      phantom: 60
       guardian: 25
+
       elder_guardian: 300
 
-  builder:
+      pillager: 20
+      vindicator: 60
+
+      ravager: 80
+      evoker: 100
+
+      shulker: 35
+
+      passive: 15
+
+    money:
+
+      zombie: 8
+      skeleton: 3
+
+      creeper: 10
+      spider: 2
+
+      cave_spider: 8
+      enderman: 8
+
+      blaze: 15
+      ghast: 12
+
+      drowned: 9
+      husk: 3
+
+      stray: 9
+      witch: 5
+
+      slime: 4
+      magma_cube: 2
+
+      piglin: 8
+      piglin_brute: 12
+
+      wither_skeleton: 18
+      hoglin: 4
+
+      phantom: 12
+      guardian: 5
+
+      elder_guardian: 100
+
+      pillager: 4
+      vindicator: 12
+
+      ravager: 18
+      evoker: 25
+
+      shulker: 8
+
+      passive: 4
+        builder:
+
+    cooldown_seconds: 3
+
     xp:
+
       stone: 6
       cobblestone: 5
+
+      planks: 6
       glass: 8
-      quartz: 25
+
+      bricks: 10
+      terracotta: 10
+
+      quartz_block: 25
       obsidian: 40
+
+      crying_obsidian: 55
       glowstone: 20
+
       sea_lantern: 30
+      purpur_block: 25
+
+      prismarine: 25
+
+      netherite_block: 250
+
+      diamond_block: 150
+      emerald_block: 120
+      gold_block: 80
+
+    money:
+
+      stone: 1.5
+      cobblestone: 1
+
+      planks: 1.5
+      glass: 2
+
+      bricks: 2.5
+      terracotta: 2.5
+
+      quartz_block: 8
+      obsidian: 12
+
+      crying_obsidian: 18
+      glowstone: 6
+
+      sea_lantern: 9
+      purpur_block: 8
+
+      prismarine: 8
+
+      netherite_block: 80
+
+      diamond_block: 50
+      emerald_block: 40
+      gold_block: 25
 
   pecheur:
+
     xp:
+
       cod: 35
       salmon: 50
+
+      pufferfish: 90
       tropical_fish: 120
 
+    money:
+
+      cod: 10
+      salmon: 18
+
+      pufferfish: 35
+      tropical_fish: 50
+
   marchand:
+
     xp:
       trade: 50
 
+    money:
+      trade: 15
+
   enchanteur:
-    xp:
-      rare_item: 25
+
+    base_xp: 10
+
+    rarity_multiplier:
+
+      common: 1.0
+      uncommon: 1.5
+      rare: 2.0
+      epic: 3.0
+      legendary: 5.0
+
+    enchant_multiplier:
+
+      level_1: 1.0
+      level_2: 1.4
+      level_3: 1.8
+      level_4: 2.2
+      level_5: 2.8
 
   alchimiste:
+
     xp:
+
       potion: 18
+
+      splash_potion: 24
+
+      lingering_potion: 30
+
+    money:
+
+      potion: 4
+
+      splash_potion: 6
+
+      lingering_potion: 8
+
+bonus_items:
+
+  level50:
+
+    name: "Neo Armor MK-I"
+
+    material: IRON
+
+    xp_bonus_percent: 5
+
+    jobs:
+
+      mineur:
+        item: CHESTPLATE
+
+      agriculteur:
+        item: CHESTPLATE
+
+      bucheron:
+        item: HELMET
+
+      chasseur:
+        item: HELMET
+
+      marchand:
+        item: LEGGINGS
+
+      enchanteur:
+        item: LEGGINGS
+
+      builder:
+        item: BOOTS
+
+      alchimiste:
+        item: BOOTS
+
+      pecheur:
+        item: SWORD
+
+    sword_name: "Quantum Blade MK-I"
+
+  level100:
+
+    name: "Neo Armor MK-II"
+
+    material: IRON
+
+    xp_bonus_percent: 10
+
+    jobs:
+
+      mineur:
+        item: CHESTPLATE
+
+      agriculteur:
+        item: CHESTPLATE
+
+      bucheron:
+        item: HELMET
+
+      chasseur:
+        item: HELMET
+
+      marchand:
+        item: LEGGINGS
+
+      enchanteur:
+        item: LEGGINGS
+
+      builder:
+        item: BOOTS
+
+      alchimiste:
+        item: BOOTS
+
+      pecheur:
+        item: SWORD
+
+    sword_name: "Quantum Blade MK-II"
+
+bossbar:
+
+  enabled: true
+
+  update_ticks: 20
+
+  format: "&b%job% &7| &eNiveau %level% &7| &a%xp%/%required% XP"
+
+gui:
+
+  jobs:
+
+    title: "&8Métiers"
+
+    size: 27
+
+  rank:
+
+    title: "&8Progression des Grades"
+
+    size: 54
+
+homes:
+
+  default_rank_1: 1
+
+auctionhouse:
+
+  slots_per_rank_multiplier: 5
+
+fly:
+
+  warning_seconds: 30
+
+  rank_required: 8
+
+nightvision:
+
+  rank_required: 2
+
+enderchest:
+
+  rank_required: 5
+
+nether:
+
+  rank_required: 6
+
+end:
+
+  rank_required: 11
+
+admin:
+
+  bypass_nether_requirement: true
+
+  bypass_end_requirement: true
+
+  ranks:
+
+    - FONDATEUR
+    - ADMIN
+    - MODO
+
+storage:
+
+  save_interval_seconds: 300
+
+messages:
+
+  prefix: "&8[&bJobsRanks&8] "
+
+  levelup: "&aTon métier %job% est maintenant niveau %level% !"
+
+  rankup: "&6Tu es maintenant %rank% !"
+
+  fly_warning: "&cTon fly se termine dans 30 secondes."
+
+  no_requirement: "&cTu ne remplis pas les prérequis."
